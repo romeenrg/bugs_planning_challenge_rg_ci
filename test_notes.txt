@@ -1,0 +1,90 @@
+** TESTING **
+Listing A Space on MakersBnB
+
+Test Data - what shows on the listing once listed or if error is thrown out
+
+User needs to sign up and log in - own test area
+When logged in, user is met with a home page for booking/listing spaces
+User can click 'list space' to enter listing space page
+Listing space page presented like a form with fields to fill out
+
+Field 1 - Name:
+a. Letters 
+b. Letters + numbers
+c. Letters + numbers + symbols
+d. Letters + spaces
+e. Multiple words 
+f. Really short/long name
+g. empty field
+
+    -Will the place be listed with that name or will an error pop up to reinput the name
+
+Field 2 - Des:
+a. Letters 
+b. Letters + numbers
+c. Letters + numbers + symbols
+d. Letters + spaces
+e. Multiple words 
+f. Really short/long description - scrolling ft if it does not fit in box
+g. empty field 
+
+    -Will the place be listed with the description given or will an error pop up to reinput the name
+
+
+Field 3 - Price:
+a. Whole number
+b. Float number (2dp)
+c. Float number (>2dp)
+d. Letters
+e. Symbols
+f. empty
+g. Negative number
+
+currency only pounds £
+we assume only integers allowed
+
+Field 4 - Available from/to:
+a. follows format
+b. using different format - MM/DD/YYYY , MM/DD/YY, DD/MM/YY
+c. using a date from the past
+d. having the available to before the available from
+e. empty
+f. incorrect format range (e.g 13 months, 35 days)
+
+
+Others -
+a. Only one field filled out 
+
+List my space button - 
+- found at the bottom of page
+- if all fields filled in correctly, it will list the space with all the details
+- returns user back to homepage
+- if none of the fields empty, error message? are all fields required?
+- confirmation message/screen
+
+Test Data - what shows on the listing once listed or if error is thrown out 
+
+
+Creating a Space on MakersBnb - can only test after listing spaces 
+
+Test Data - If it allows the user to request a space or if an error is thrown out
+
+User needs to log in or sign up
+When logged in, user is met with the homepage
+Can either click the spaces listed on homepage (how are they listed?) or filter through specific dates - is there another way of filters/sorting??
+
+Things to test
+
+1. Booking
+Booking a space for 1 days
+Booking space for multiple days
+Attempting to book a space greyed out (unavailable) 
+Attempting to book the same single space multiple times - without host confirmation
+Confirmation page?
+Notifications sent to users?
+
+2. Calendar 
+Scrolling into the future
+Scrolling into the past
+Clicking on the date in the NEXT month 
+De-selecting dates

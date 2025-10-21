@@ -1,62 +1,75 @@
-Listing A Space on MakersBnB
+-- Sign up Page --
+three fields for sign up - email, password, confirm password
+sign up button at bottom 
+must be valid email/password - will send user to log in page after sign up
+email and password stored in secured server/database
+log in button at top 
 
-User needs to sign up and log in - own test area
-When logged in, user is met with a home page for booking/listing spaces
-User can click 'list space' to enter listing space page
-Listing space page presented like a form with fields to fill out
-
-Field 1 - Name:
-a. Letters 
-b. Letters + numbers
-c. Letters + numbers + symbols
-d. Letters + spaces
-e. Multiple words 
-f. Really short/long name
-g. empty field
-
-    -Will the place be listed with that name or will an error pop up to reinput the name
-
-Field 2 - Des:
-a. Letters 
-b. Letters + numbers
-c. Letters + numbers + symbols
-d. Letters + spaces
-e. Multiple words 
-f. Really short/long description - scrolling ft if it does not fit in box
-g. empty field 
-
-    -Will the place be listed with the description given or will an error pop up to reinput the name
+ --Log in Page --
+two fields - email, password
+log in button at bottom 
+if valid - send user to Spaces page
+if invalid - send error message and for user to retry
+password and email gathered from database
+log in link at top of page needed??
 
 
-Field 3 - Price:
-a. Whole number
-b. Float number (2dp)
-c. Float number (>2dp)
-d. Letters
-e. Symbols
-f. empty
-g. Negative number
-
-currency only pounds £
-we assume only integers allowed
-
-Field 4 - Available from/to:
-a. follows format
-b. using different format - MM/DD/YYYY , MM/DD/YY, DD/MM/YY
-c. using a date from the past
-d. having the available to before the available from
-e. empty
-f. incorrect format range (e.g 13 months, 35 days)
+-- Spaces page --
+list spaces button below title - takes to spaces page
+sign out button top right - takes to log in page
+request button top right - takes to requests page
+spaces button top right - does nothing? refreshes page?
+date filter fields - can test this function and how it will work
+list spaces button to the right of filter fields - filters the spaces listed depending on dates selected (what if filter field is empty and you press?)
+spaces listed below - clickable to take to booking page
+scroll function for the spaces?
+database/server for spaces?
 
 
-Others -
-a. Only one field filled out
+-- Listing page --
+List space title at top of page 
+spaces, requests and sign out button top right - directs user to new page respectively
+5 empty fields - name, description, price, date from, date to - test cases can be built around these fields
+list my space button at bottom - redirects back to spaces page where the space should be present if all is valid
+added to a database/server for spaces?
+confirmation before posting the space?
+ 
 
-List my space button - 
-- found at the bottom of page
-- if all fields filled in correctly, it will list the space with all the details
-- returns user back to homepage
-- if none of the fields empty, error message? are all fields required?
-- confirmation message/screen
+-- Booking page --
+spaces, requests and sign out button top right - directs user to new page respectively
+Space name and details present at top of page 
+Calender with available dates below - unavailable dates will be greyed out - test cases can be built around this calendar
+Request to book button at bottom - takes to spaces page or requests page??
 
-Test Data - what shows on the listing once listed or if error is thrown out 
+
+
+-- Requests page --
+spaces, requests and sign out button top right - directs user to new page respectively
+request button refreshes or does nothing?
+Requests title at top of page - 'requests i have made' bottom left 'requests i have received' bottom right
+clicking a space requested - takes user to the booking page of that space (user can amend and it will update?)
+clicking a request i have received - takes to accepting and declining page
+
+-- Accepting/Declining page --
+spaces, requests and sign out button top right - directs user to new page respectively
+details of the space at top of page
+details of the user requesting the space below
+other requests for the same space - filter/sort feature? 
+confirm or deny button at bottom - returns user to updated requests page depending on their action
+final confirmation screen in case of misclick? 
+
+
+
+
+** Nice to haves **
+
+-- Updating details page --
+filled in fields with the previous details available for editing
+confirm changes button at bottom - returns user to spaces page
+
+-- Profile page -- 
+Can add/update personal details
+changing email/password
+add/change phone number
+
+-- Chat page -- 
