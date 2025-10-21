@@ -86,4 +86,115 @@ Filter function on spaces page
 Booking a space
 Calendar function of the booking page
 
+3. Booking a Space:
+Purpose: ensure users can successfully request, approve, and manage space reservations
+
+a. Test case ID: 15 — Booking a valid available date
+
+   Input:
+   Space listed by User A: Available 10–15 Nov
+   User B requests booking for 12 Nov
+
+   Expected Output:
+   Confirmation page ?? (Assumption)
+   Booking request created successfully
+   Status = “Pending approval”
+   Space still available for others until approved
+
+
+b. Test case ID: 16 — Booking a date outside the available range
+
+Input:
+Space available 10–15 Nov
+User B requests booking for 20 Nov
+
+Expected Output:
+Error message displayed: “Selected date not available”
+No booking created
+
+
+c. Test case ID: 17 — Booking a date that is already booked (approved)
+
+Input:
+Space available 10–15 Nov
+12 Nov already approved for User C
+User B tries to book 12 Nov again
+
+Expected Output:
+Booking attempt rejected
+Error or warning: “This date is already booked”
+
+
+d. Test case ID: 18 — Booking the same date while another booking is pending
+
+Input:
+User C has a pending booking request for 13 Nov
+User B requests booking for 13 Nov before approval
+
+Expected Output:
+Second booking request allowed (status = “Pending”)
+Once first booking is approved, second one automatically rejected
+
+
+
+e. Test case ID: 19 — Booking with invalid date format
+
+Input:
+User enters date manually: “2025/13/40”
+
+Expected Output:
+Validation error displayed
+Booking not created
+
+
+f. Test case ID: 20 — Booking multiple spaces on different dates
+
+Input:
+User B books Space 1 for 11 Nov
+User B books Space 2 for 12 Nov
+
+Expected Output:
+Both bookings created successfully
+Each with separate “Pending approval” status
+
+
+g. Test case ID: 21 — Space owner approves booking
+
+Input:
+User B requests booking for 11 Nov
+User A (owner) approves booking
+
+Expected Output:
+Booking status changes to “Approved”
+11 Nov becomes unavailable for new bookings
+
+
+h. Test case ID: 22 — Space owner rejects booking
+
+Input:
+User B requests booking for 14 Nov
+User A rejects booking
+
+Expected Output:
+Booking status = “Rejected”
+14 Nov remains available
+
+
+i. Test case ID: 23 — Attempting duplicate booking requests for same date
+
+Input:
+User B requests booking for 12 Nov twice
+
+Expected Output:
+System prevents duplicate requests
+Error message: “You already have a booking request for this date”
+
+
+j. Test case ID: 24 - Filtering preferable dates 
+
+Input: 
+User A uses the fields the dates field and keys 21/10/2025 - 5/11/2025
+
+Expected Output:
+System displays the spaces which availablilty falls in an on the date range 
 
