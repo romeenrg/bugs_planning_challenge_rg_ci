@@ -1,0 +1,89 @@
+Test cases for Listing Space on MakersBnB
+1. Name field
+Purpose: How the value in the name field affects the listing
+
+a. Test case id: 1 - name consisting of just letters
+   Input: 'House'
+   Expected output: When listing the space, the name of the space will be 'House'
+
+
+b. Test case id: 2 - name consisting of letters & spaces
+   Input: 'Flat in London'
+   Expected output: When listing the space, the name of the space will be 'Flat in London'
+
+c. Test case id: 3 - name consisting of just letters & numbers
+   Input: '4 bedroom House'
+   Expected output: When listing the space, the name of the space will be '4 bedroom House'
+
+
+d. Test case id: 4 - name with symbols
+   Input: 'Stunning Studio!'
+   Expected output: When listing the space, the name of the space will be 'Stunning Studio!'
+
+
+
+e. Test case id: 5 - name with a single character/short name
+   Input: 'A'
+   Expected output: When listing the space, the name of the space will be 'A'
+
+
+
+f. Test case id: 6 - name thats very long
+   Input: 'This is a really big, five bedroom house situated in central London with lovely amenities'
+   Expected output: When listing the space, the name of the space will be 'This is a really big, five bedroom house situated in central London with lovely amenities'
+
+
+g. Test case id: 7 - empty name field
+   Input: ''
+   Expected output: Error message to display 'Please fill this field out'   
+
+2. Description field
+Purpose: How the value in the description field affects the listing
+
+
+a. Test case id: 8 - description consisting of just letters
+   Input: 'Available'
+   Expected output: When listing the space, the description of the space will be 'Available'
+
+
+b. Test case id: 9 - description consisting of letters and spaces
+   Input: 'Flat in London near public transport'
+   Expected output: When listing the space, the description of the space will be 'Flat in London near public transport'
+
+c. Test case id: 10 - description consisting of letters and numbers
+   Input: '4 bedroom House with lots of space and amenities'
+   Expected output: When listing the space, the description of the space will be '4 bedroom House with lots of space and amenities'
+
+
+d. Test case id: 11 - description consisting of letters and symbols
+   Input: 'Stunning Studio with a kitchen amazing views!'
+   Expected output: When listing the space, the description will be 'Stunning Studio with a kitchen amazing views!'
+
+
+e. Test case id: 12 - short description 
+   Input: 'A'
+   Expected output: When listing the space, the description will be 'A'
+
+
+
+f. Test case id: 13 - long descriptions
+   Input: 'This is a really big, five bedroom house situated in central London with lovely amenities.'
+   Expected output: When listing the space, the name of the space will be 'This is a really big, five bedroom house situated in central London with lovely amenities'
+
+
+g. Test case id: 14 - empty description
+   Input: ''
+   Expected output: Error message to display 'Please fill this field out' 
+
+
+
+etc for the rest of the fields
+
+Would have test cases for booking a space too if time allows - 90min exploratory on just listing space ?
+
+Booking Space
+Filter function on spaces page
+Booking a space
+Calendar function of the booking page
+
+
